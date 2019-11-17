@@ -1,0 +1,14 @@
+How to render .psg file into the soundtrack, using ay_model.v
+
+1. Have a .PSG file of the AY track. You can use Fuse emulator to make it.
+
+2. Compile all verilog files (system verilog, actually) with filenames defines as stated in render.v
+   There's example build and run scripts for modelsim tool.
+
+3. Run testbench until it $stop'ped. On my machines (i7 and k10), it runs 15..18x realtime,
+   i.e. 15 to 18 seconds needed to render single second of the resulting soundtrack.
+
+4. By now, you have 3 dump files, each containing single channel.
+
+5. Use downsample.py to convert them into .flac sound file
+

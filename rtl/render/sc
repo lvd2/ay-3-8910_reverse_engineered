@@ -1,0 +1,4 @@
+#!/bin/bash
+
+vsim -c -vopt work.render
+

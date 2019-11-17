@@ -1,0 +1,5 @@
+#!/bin/bash
+
+vlog -sv -novopt -incr +define+PSG_FILE="\"$1\"" +define+DUMP_FILES="\"$2\""    psg.v savechan.v render.v aytab.v ../ay_model.v
+
+

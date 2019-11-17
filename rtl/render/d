@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf ./work/
+
+vlib work
+
